@@ -3,6 +3,7 @@ import Balance from "./components/Balance";
 import IncomeExpenses from "./components/IncomeExpenses";
 import TransactionHistory from "./components/TransactionHistory";
 import AddTransaction from "./components/AddTransaction";
+import Typography from "@mui/material/Typography";
 import "./styles.css";
 
 const App = () => {
@@ -33,6 +34,9 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <Typography variant="h6" gutterBottom color={"primary"}>
+        Submitted by: Allaudin Ali Ahmmad - F2020266458
+      </Typography>
       <div className="app">
         <Balance balance={getBalance()} />
         <IncomeExpenses income={getIncome()} expense={getExpense()} />
